@@ -45,6 +45,7 @@ class SignUpFragment : Fragment() {
                 val queue = Volley.newRequestQueue(context)
                 val url = "http://test.api.catering.bluecodegames.com/user/register"
                 val jsonObject = JSONObject()
+                jsonObject.put("id_shop", "1")
                 jsonObject.put("firstname", firstname)
                 jsonObject.put("lastname", lastname)
                 jsonObject.put("address", address)
