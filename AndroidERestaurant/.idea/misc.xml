@@ -9,17 +9,35 @@
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_change.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_details.xml" value="0.1796875" />
-        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dish.xml" value="0.1796875" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_connexion.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_details.xml" value="0.22" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dish.xml" value="0.1" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dishes.xml" value="0.1" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_entrees.xml" value="0.22" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home_basket.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_items.xml" value="0.1796875" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_panier.xml" value="0.22" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_plat_test.xml" value="0.1796875" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_plats.xml" value="0.1796875" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_pocket.xml" value="0.1796875" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_view_design.xml" value="0.5" />
-        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/card_view_design.xml" value="0.5" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/base_act.xml" value="0.5" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/basket_view_design.xml" value="0.33495145631067963" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/card_pocket_design.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/card_view_design.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_1.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_2.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_blank.xml" value="0.16530797101449277" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_dashboard.xml" value="0.1796875" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_login.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_pict_details.xml" value="0.13994565217391305" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_second.xml" value="0.1796875" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_signup.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_third.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/pocket_view_design.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/text_row_item.xml" value="0.22" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/guill/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19583333333333333" />
