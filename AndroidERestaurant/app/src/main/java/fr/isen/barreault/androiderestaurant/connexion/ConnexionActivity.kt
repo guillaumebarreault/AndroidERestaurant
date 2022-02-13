@@ -1,11 +1,11 @@
 package fr.isen.barreault.androiderestaurant.connexion
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import fr.isen.barreault.androiderestaurant.HomeActivity
+import fr.isen.barreault.androiderestaurant.BaseActivity
 import fr.isen.barreault.androiderestaurant.R
 import fr.isen.barreault.androiderestaurant.databinding.ActivityConnexionBinding
 
@@ -18,38 +18,25 @@ class ConnexionActivity : AppCompatActivity() {
         binding = ActivityConnexionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val homeBtn = binding.backMenu
-        homeBtn.setOnClickListener {
-            val home = Intent(this, HomeActivity::class.java)
-            startActivity(home)
-        }
-
-        val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainerView, SignUpFragment()).commit()
-
+        /* call default fragment : login */
+        changeFragment(LoginFragment())
 
         val loginBtn = binding.loginBtn
-        val signupBtn = binding.signupBtn
+        val registerBtn = binding.registerBtn
 
         loginBtn.setOnClickListener {
-            changeToLogin()
+            changeFragment(LoginFragment())
         }
-        signupBtn.setOnClickListener {
-            changeToSignUp()
+        registerBtn.setOnClickListener {
+            changeFragment(RegisterFragment())
         }
-
-
     }
-    private fun changeToLogin() {
+
+    /* change fragment between login and register */
+    private fun changeFragment(fragment: Fragment){
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainerView, LoginFragment()).commit()
+        fragmentTransaction.replace(R.id.fragmentContainerView, fragment).commit()
     }
-    private fun changeToSignUp() {
-        val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainerView, SignUpFragment()).commit()
 
-    }
 }

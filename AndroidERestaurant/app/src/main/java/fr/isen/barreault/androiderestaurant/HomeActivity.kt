@@ -3,12 +3,10 @@ package fr.isen.barreault.androiderestaurant
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import fr.isen.barreault.androiderestaurant.databinding.ActivityHomeBinding
 import fr.isen.barreault.androiderestaurant.dishes.DishesActivity
 
-
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : BaseActivity() {
 
     private lateinit var binding: ActivityHomeBinding
 
@@ -31,13 +29,14 @@ class HomeActivity : AppCompatActivity() {
             selectCategory(getString(R.string.home_desserts))
         }
     }
+
     private fun selectCategory(category: String) {
-        //Toast.makeText(this, "Selection des entrées.", Toast.LENGTH_LONG).show()
-        val changePage: Intent = Intent(this, DishesActivity::class.java)
+        //Toast.makeText(this, "Selection des plats.", Toast.LENGTH_LONG).show()
+        val moveCategory: Intent = Intent(this, DishesActivity::class.java)
         /* put string in new activity */
-        changePage.putExtra("category_type", category)
+        moveCategory.putExtra("category_type", category)
         Log.i("INFO","End of HomeActivity")
-        startActivity(changePage)
+        startActivity(moveCategory)
         //finish()    /* kill activity */
     }
 }

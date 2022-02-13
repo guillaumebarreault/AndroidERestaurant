@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B7D8D5">
-
-
-    // bouton pour acceder aux entrées
-
-    // bouton pour acceder aux plats
-
-    // bouton pour acceder aux desserts
-
-    // texte titre
-
-    // texte titre nom restaurant
+    android:background="#B84B29">
 
     <Button
         android:id="@+id/starterBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#F1EED1"
         android:text="Entrées"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,7 +23,9 @@
         android:id="@+id/dishBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#F1EED1"
         android:text="Plats"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/dessertBtn"
         app:layout_constraintEnd_toEndOf="@+id/starterBtn"
@@ -47,7 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
+        android:backgroundTint="#F1EED1"
         android:text="Desserts"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/dishBtn"
@@ -69,13 +63,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/nameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="R2D2-Resto"
+        android:text="Resto-Slide"
         android:textAlignment="gravity"
         android:textColor="#000000"
         android:textSize="34sp"
@@ -95,18 +88,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.359"
         app:srcCompat="@drawable/imag_presentation_home" />
-
-    <TextView
-        android:id="@+id/contactText"
-        android:layout_width="211dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="28dp"
-        android:text="Contact Support : +33 ** ** ** ** **"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/appLogo"

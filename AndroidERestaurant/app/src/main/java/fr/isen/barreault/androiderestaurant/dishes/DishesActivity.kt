@@ -3,19 +3,20 @@ package fr.isen.barreault.androiderestaurant.dishes
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
+import fr.isen.barreault.androiderestaurant.BaseActivity
+import fr.isen.barreault.androiderestaurant.Constants
 import fr.isen.barreault.androiderestaurant.databinding.ActivityDishesBinding
 import fr.isen.barreault.androiderestaurant.model.DishModel
 import fr.isen.barreault.androiderestaurant.model.DishResult
 import org.json.JSONObject
 
-
-class DishesActivity : AppCompatActivity() {
+class DishesActivity : BaseActivity() {
 
     private lateinit var binding: ActivityDishesBinding
 
@@ -34,38 +35,39 @@ class DishesActivity : AppCompatActivity() {
         /* http request to the API */
         //val zoneRep: TextView = binding.httpResp
         val queue = Volley.newRequestQueue(this)
-        val url = "http://test.api.catering.bluecodegames.com/menu"
         val jsonObject = JSONObject()
-        jsonObject.put("id_shop","1")
+
+        jsonObject.put(Constants.ID_SHOP,Constants.KEY_SHOP)
 
         /* request string response from provided url */
-        val jsonRequest = JsonObjectRequest(
-            Request.Method.POST, url, jsonObject, { response ->
-                val dishresult = Gson().fromJson(response.toString(), DishResult::class.java)
-                displayDishes(dishresult.data.firstOrNull {it.name_fr==category}?.items ?: listOf())
-                //zoneRep.text = "response: ${dishresult.data[1].items[0].name_fr}"
-                Log.i("", "response: $dishresult")
+        val jsonRequestMenu = JsonObjectRequest(
+            Request.Method.POST, Constants.URL_MENU, jsonObject,
+            { response ->
+                val dishResult = Gson().fromJson(response.toString(), DishResult::class.java)
+                displayDishes(dishResult.data.firstOrNull {it.name_fr == category}?.items ?: listOf())
+                //zoneRep.text = "response: ${dishResult.data[1].items[0].name_fr}"
+                Log.i("INFO", "response: $dishResult")
             },{
                 //zoneRep.text = "Volley error: $it"
-                Log.e("DishActivity", "error recup list plats")
+                Log.e("ERROR", "error get dishes list")
             })
-        queue.add(jsonRequest)
+        jsonRequestMenu.retryPolicy = DefaultRetryPolicy(
+            DefaultRetryPolicy.DEFAULT_TIMEOUT_MS,0,1f)
+        queue.add(jsonRequestMenu)
     }
 
     private fun displayDishes(dishes: List<DishModel>) {
         /* getting the recyclerview by its id */
         val recyclerview = binding.dishList
-        /* this creates a vertical layout Manager */
         recyclerview.layoutManager = LinearLayoutManager(this)
-        recyclerview.adapter = DishAdapter(dishes){
+        recyclerview.adapter = DishesAdapter(dishes){
             val selectedDish = Intent( this, DetailsActivity::class.java)
             selectedDish.putExtra("dish", it)
-            Log.i("INFO","End of DishActivity")
+            Log.i("INFO","End of DishesActivity")
             startActivity(selectedDish)
         }
-
-
     }
+
 }
 
 

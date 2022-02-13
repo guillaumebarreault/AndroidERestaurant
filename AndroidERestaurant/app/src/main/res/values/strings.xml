@@ -1,10 +1,7 @@
 <resources>
-    <string name="app_name">AndroidERestaurant</string>
+    <string name="app_name">Guillaume</string>
     <string name="home_starters">Entrées</string>
     <string name="home_dishes">Plats</string>
     <string name="home_desserts">Desserts</string>
-    <string name="pizza">Pizzas</string>
-    <string name="burger">Burgers</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error">Erreur de saisie</string>
 </resources>
