@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fr.isen.barreault.androiderestaurant">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:debuggable="false"
+        android:theme="@style/Theme.AndroidERestaurant"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode,HardcodedDebugg"
+        tools:targetApi="m">
+        <activity
+            android:name=".basket.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".connexion.ConnexionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".basket.BasketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dishes.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dishes.DishesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

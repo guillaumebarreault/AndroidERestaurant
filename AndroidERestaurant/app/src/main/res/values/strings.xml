@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GuillaumeRestau</string>
+    <string name="home_starters">Entrées</string>
+    <string name="home_dishes">Plats</string>
+    <string name="home_desserts">Desserts</string>
+    <string name="error">Erreur de saisie</string>
+</resources>
